@@ -1,0 +1,92 @@
+main {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-areas: 
+    "h h h"
+    "n n n"
+    "b ar j"
+    "f f f";
+}
+
+header {
+    grid-area: h;
+    background-color: antiquewhite;
+    padding: 10px;
+    border: 1px solid black;
+    text-align: center;
+}
+
+nav {
+    grid-area: n;
+    background-color: rgb(255, 174, 0);
+    padding: 10px;
+    border: 1px solid black;
+}
+
+nav ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    list-style: none;
+    background-color: cornflowerblue;
+    border: 1px solid black;
+    padding: 10px;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+a:hover{
+    color: black;
+    background-color: antiquewhite;
+}
+
+.bal {
+    grid-area: b;
+    background-color: rgb(247, 255, 1);
+    border: 1px solid black;
+    padding: 10px;
+}
+
+article {
+    grid-area: ar;
+    background-color: rgb(30, 105, 8);
+    padding: 10px;
+    border: 1px solid black;
+}
+
+.jobb {
+    grid-area: j;
+    background-color: rgb(2, 82, 114);
+    padding: 10px;
+    border: 1px solid black;
+}
+
+footer {
+    grid-area: f;
+    background-color: rgb(87, 7, 7);
+    padding: 10px;
+    border: 1px solid black;
+    text-align: center;
+}
+
+h1 {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: rgb(11, 45, 97);
+}
+
+@media screen and (max-width:800px) {
+    main {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+    "h"
+    "n"
+    "b"
+    "ar"
+    "j"
+    "f";
+}
+    
+}
